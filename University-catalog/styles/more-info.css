@@ -1,0 +1,108 @@
+/* ...existing code... */
+.more-info-sidebar {
+  display: none;
+  background-color: #2c4a36; /* Darker green for consistency */
+  color: #fff; /* White text for contrast */
+}
+
+.more-info-sidebar.active {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  right: 0;
+  top: 70px;
+  bottom: 0;
+  width: 350px;
+  background-color: #2c4a36; /* Match sidebar */
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.more-info-sidebar .remove-div {
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  align-self: end;
+  margin-right: 5px;
+  cursor: pointer;
+  filter: invert(1); /* Make icon white */
+}
+
+.more-info-sidebar .book-information {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-information img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  border: 2px solid #fff; /* White border for contrast */
+}
+
+.book-information p {
+  color: #e0e0e0;
+  font-family: "Roboto", sans-serif;
+}
+
+.book-Name {
+  font-size: 21px;
+  color: #ffd814; /* Gold accent for book name */
+  width: 255px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.book-Author {
+  margin-top: -18px;
+  font-size: 15px;
+  color: #c0c0c0;
+}
+
+.location {
+  width: 295px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: -13px;
+}
+
+.location-info {
+  position: relative;
+}
+
+.location-info img {
+  margin-left: -27px;
+  margin-top: -6px;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #c0c0c0;
+}
+
+.description {
+  font-size: 19px;
+  height: 165px;
+  overflow: hidden;
+  width: 295px;
+  text-align: justify;
+  margin-top: -2px;
+  color: #e0e0e0;
+}
+
+.borrow-button {
+  margin-top: 30px;
+  background-color: #ffd814; /* Gold button */
+  color: #2c4a36; /* Dark green text */
+  border: none;
+  padding: 10px 40px 10px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(44, 74, 54, 0.08);
+}
+/* ...existing code... */

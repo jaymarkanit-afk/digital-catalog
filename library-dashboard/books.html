@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:700,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles-main/sidebar.css" />
+    <link rel="stylesheet" href="styles-main/header.css" />
+    <link rel="stylesheet" href="styles-books/book-details.css" />
+
+    <title>Add Book</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-name">
+        <img class="logo" src="images/Caraga_State_University.png" />
+        <p class="system-name">
+          <span class="digital">University</span
+          ><span class="library-catalog">Library Catalog</span>
+        </p>
+      </div>
+      <div class="sidebar-icons">
+        <a class="link" href="dashboard.html">
+          <div class="icons">
+            <img src="icons/home.png" /><span class="icon-name">Home</span>
+          </div>
+        </a>
+
+        <a class="link" href="books.html">
+          <div class="icons">
+            <img src="icons/book-open-cover.png" /><span class="icon-name"
+              >Books</span
+            >
+          </div>
+        </a>
+
+        <div class="icons">
+          <img src="icons/code-pull-request.png" /><span class="icon-name"
+            >Circulation
+          </span>
+        </div>
+
+        <a class="link" href="manage.html">
+          <div class="icons">
+            <img src="icons/move-to-folder.png" /><span class="icon-name"
+              >Manage Books</span
+            >
+          </div>
+        </a>
+
+        <a class="link" href="request.html">
+          <div class="icons">
+            <img src="icons/lead-management.png" /><span class="icon-name"
+              >Manage request</span
+            >
+          </div>
+        </a>
+
+        <div class="icons">
+          <img src="icons/user-gear.png" /><span class="icon-name"
+            >Manage user</span
+          >
+        </div>
+
+        <div class="icons">
+          <img src="icons/settings.png" /><span class="icon-name"
+            >Settings</span
+          >
+        </div>
+
+        <div class="icons">
+          <img src="icons/brightness.png" /><span class="icon-name">Theme</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="search">
+        <h1>Add Book</h1>
+      </div>
+
+      <div class="notif">
+        <img class="notif-bell" src="icons/notification-bell.png" />
+        <img class="profile" src="images/channel-1.jpeg" />
+      </div>
+    </div>
+
+    <div class="add-book-details">
+      <div class="details-container">
+        <div class="book-spefication">
+          <p>Book Type</p>
+          <select class="input1">
+            <option value="0">Select Book Type</option>
+            <option value="1">Fiction</option>
+            <option value="2">Non-Fiction</option>
+            <option value="3">Academic</option>
+            <option value="4">Biography</option>
+          </select>
+        </div>
+
+        <div class="book-spefication">
+          <p>ISBN</p>
+          <input class="input" type="text" placeholder="12412" />
+        </div>
+
+        <div class="book-spefication">
+          <p>Book Name</p>
+          <input class="input" type="text" placeholder="C language" />
+        </div>
+
+        <div class="book-spefication">
+          <p>Book Number</p>
+          <input class="input" type="text" placeholder="304" />
+        </div>
+
+        <div class="book-spefication">
+          <p>Publisher</p>
+          <input class="input" type="text" placeholder="Kent Harvey Gwapo" />
+        </div>
+
+        <div class="book-spefication">
+          <p>Author</p>
+          <input class="input" type="text" placeholder="Stephen Nino" />
+        </div>
+
+        <div class="book-spefication">
+          <p>Book Copies</p>
+          <input class="input" type="number" placeholder="0" />
+        </div>
+
+        <div class="book-spefication">
+          <p>Descriptions</p>
+          <input class="input" type="text" placeholder="Type something" />
+        </div>
+
+        <div class="book-spefication">
+          <p>Cover Image</p>
+          <input class="file-image" type="file" accept="image" />
+        </div>
+      </div>
+
+      <button class="submit-button">Submit</button>
+    </div>
+  </body>
+</html>

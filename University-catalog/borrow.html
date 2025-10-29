@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Borrow Books</title>
+
+    <link rel="stylesheet" href="styles-borrow/header.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header section -->
+    <div class="header">
+      <div class="left-section">
+        <a class="link" href="index.html">
+          <img class="logo" src="images/Caraga_State_University.png" />
+        </a>
+      </div>
+      <div class="middle-section">
+        Checkout <span class="cart-count js-cart-count">(0 Items)</span>
+      </div>
+      <div class="right-section">
+        <img class="locked" src="icons/lock.png" />
+      </div>
+    </div>
+
+    <!-- Main content area -->
+    <div class="main-grid">
+      <div class="review-grids">
+        <!-- Borrowed books will be dynamically added here -->
+      </div>
+
+      <div class="review-summary">
+        <div class="policies-header">
+          <div class="policies-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="#FF6B35"/>
+              <path d="M19 15L20.09 19.26L24 20L20.09 20.74L19 25L17.91 20.74L14 20L17.91 19.26L19 15Z" fill="#FF6B35"/>
+            </svg>
+          </div>
+          <h3>Library Rules & Policies</h3>
+        </div>
+        
+        <div class="policies-content">
+          <div class="policy-section">
+            <h4>Borrowing Period</h4>
+            <p>Students can borrow books for 14 days</p>
+            <p>Faculty members can borrow for 30 days</p>
+          </div>
+          
+          <div class="policy-section">
+            <h4>Renewal Policy</h4>
+            <p>Books can be renewed up to 2 times if no other user has reserved them</p>
+          </div>
+          
+          <div class="policy-section">
+            <h4>Late Return Fines</h4>
+            <p>Late returns incur a fine of ₱5.00 per day for students and ₱10.00 per day for reference books</p>
+          </div>
+          
+          <div class="policy-section">
+            <h4>Lost or Damaged Books</h4>
+            <p>Lost books must be replaced or paid in full. Damaged books may incur repair fees or replacement costs</p>
+          </div>
+          
+          <div class="policy-section">
+            <h4>Reservation System</h4>
+            <p>Users can reserve books that are currently checked out. You will be notified when available</p>
+          </div>
+        </div>
+        
+        <div class="help-section">
+          <h4>NEED HELP?</h4>
+          <p>Contact the library desk:</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.095 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2H7.10999C7.59531 1.99522 8.06679 2.16708 8.43376 2.48353C8.80073 2.79999 9.03996 3.23945 9.10999 3.72C9.23662 4.68007 9.47144 5.62273 9.80999 6.53C9.94454 6.88792 9.97366 7.27691 9.89391 7.65088C9.81415 8.02485 9.62886 8.36811 9.35999 8.64L8.08999 9.91C9.51355 12.4135 11.5865 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" fill="#FF0000"/>
+              </svg>
+              <span>(085) 123-4567</span>
+            </div>
+            <div class="contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="#FFFFFF"/>
+              </svg>
+              <span>library@csu.eduph</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="borrow-scripts/borrow-cart.js"></script>
+    <script type="module" src="borrow-scripts/borrow-html.js"></script>
+  </body>
+</html>

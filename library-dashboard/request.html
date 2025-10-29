@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage request</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:700,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles-main/sidebar.css" />
+    <link rel="stylesheet" href="styles-main/header.css" />
+    <link rel="stylesheet" href="request-styles/content.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="search">
+        <h1>Manage Request</h1>
+      </div>
+
+      <div class="notif">
+        <img class="notif-bell" src="icons/notification-bell.png" />
+        <img class="profile" src="images/channel-1.jpeg" />
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="logo-name">
+        <img class="logo" src="images/Caraga_State_University.png" />
+        <p class="system-name">
+          <span class="digital">University</span
+          ><span class="library-catalog">Library Catalog</span>
+        </p>
+      </div>
+      <div class="sidebar-icons">
+        <a class="link" href="dashboard.html">
+          <div class="icons">
+            <img src="icons/home.png" /><span class="icon-name">Home</span>
+          </div>
+        </a>
+
+        <a class="link" href="books.html">
+          <div class="icons">
+            <img src="icons/book-open-cover.png" /><span class="icon-name"
+              >Books</span
+            >
+          </div>
+        </a>
+
+        <div class="icons">
+          <img src="icons/code-pull-request.png" /><span class="icon-name"
+            >Circulation
+          </span>
+        </div>
+
+        <a class="link" href="manage.html">
+          <div class="icons">
+            <img src="icons/move-to-folder.png" /><span class="icon-name"
+              >Manage Books</span
+            >
+          </div>
+        </a>
+
+        <a class="link" href="request.html">
+          <div class="icons">
+            <img src="icons/lead-management.png" /><span class="icon-name"
+              >Manage request</span
+            >
+          </div>
+        </a>
+
+        <div class="icons">
+          <img src="icons/user-gear.png" /><span class="icon-name"
+            >Manage user</span
+          >
+        </div>
+
+        <div class="icons">
+          <img src="icons/settings.png" /><span class="icon-name"
+            >Settings</span
+          >
+        </div>
+
+        <div class="icons">
+          <img src="icons/brightness.png" /><span class="icon-name">Theme</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="upper">
+        <p>Student ID</p>
+        <p>Student Name</p>
+        <p>Book Name</p>
+        <p>Date</p>
+        <p>Actions</p>
+      </div>
+
+      <div class="request-table">
+        <p data-label="Student ID">221-01231</p>
+        <p data-label="Student Name">Jayson Tina</p>
+        <p data-label="Book Name">Python Crash Course</p>
+        <p data-label="Date">2025-10-24</p>
+        <div class="Actions">
+          <button>Approve</button>
+          <button>Decline</button>
+        </div>
+      </div>
+
+      <div class="request-table">
+        <p data-label="Student ID">221-01232</p>
+        <p data-label="Student Name">Maria Santos</p>
+        <p data-label="Book Name">Introduction to Algorithms</p>
+        <p data-label="Date">2025-10-23</p>
+        <div class="Actions">
+          <button>Approve</button>
+          <button>Decline</button>
+        </div>
+      </div>
+
+      <div class="request-table">
+        <p data-label="Student ID">221-01233</p>
+        <p data-label="Student Name">John Dela Cruz</p>
+        <p data-label="Book Name">Clean Code</p>
+        <p data-label="Date">2025-10-22</p>
+        <div class="Actions">
+          <button>Approve</button>
+          <button>Decline</button>
+        </div>
+      </div>
+
+      <div class="request-table">
+        <p data-label="Student ID">221-01234</p>
+        <p data-label="Student Name">Sarah Johnson</p>
+        <p data-label="Book Name">Database Systems</p>
+        <p data-label="Date">2025-10-21</p>
+        <div class="Actions">
+          <button>Approve</button>
+          <button>Decline</button>
+        </div>
+      </div>
+
+      <div class="request-table">
+        <p data-label="Student ID">221-01235</p>
+        <p data-label="Student Name">Michael Chen</p>
+        <p data-label="Book Name">Web Development Guide</p>
+        <p data-label="Date">2025-10-20</p>
+        <div class="Actions">
+          <button>Approve</button>
+          <button>Decline</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

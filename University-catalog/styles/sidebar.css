@@ -1,0 +1,95 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 190px;
+  background-color: white;
+  box-shadow: 0.5px 0.4px 7px rgba(0, 0, 0, 0.15);
+}
+
+.logo-name {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid rgb(212, 212, 212);
+}
+
+.system-name {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #14452f;
+  text-align: center;
+  margin-top: -5px;
+  text-shadow: none; /* Remove text shadow */
+  line-height: 1.1;
+  display: flex;
+  flex-direction: column;
+}
+
+.digital {
+  margin-top: 15px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #14452f;
+  letter-spacing: 1px;
+  text-transform: none;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.library-catalog {
+  font-size: 12px;
+  font-weight: bold;
+  color: #14452f;
+  letter-spacing: 0.5px;
+  font-family: "Montserrat", Arial, sans-serif;
+  margin-top: 0px;
+}
+
+.logo {
+  width: 95px;
+}
+.sidebar-icons {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.sidebar-icons img {
+  width: 23px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 150px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px 0 10px 10px;
+}
+
+.icons:hover {
+  padding: 10px 0 10px 10px;
+  background-color: #015f26;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 160px;
+  margin-left: 20px;
+  color: white;
+}
+
+.icon-name {
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: roboto, Arial;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}

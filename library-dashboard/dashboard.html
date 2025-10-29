@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles-main/sidebar.css" />
+    <link rel="stylesheet" href="styles-main/header.css" />
+    <link rel="stylesheet" href="styles-main/main.css" />
+    <title>Admin Panel</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="search">
+        <h1>Admin Panel</h1>
+      </div>
+
+      <div class="notif">
+        <img class="notif-bell" src="icons/notification-bell.png" />
+        <img class="profile" src="images/channel-1.jpeg" />
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="logo-name">
+        <img class="logo" src="images/Caraga_State_University.png" />
+        <p class="system-name"><span class="digital">University</span><span class="library-catalog">Library Catalog</span></p>
+      </div>
+      <div class="sidebar-icons">
+        <a class="link" href="dashboard.html">
+          <div class="icons">
+            <img src="icons/home.png" /><span class="icon-name">Home</span>
+          </div>
+        </a>
+
+        <a class="link" href="books.html">
+          <div class="icons">
+            <img src="icons/book-open-cover.png" /><span class="icon-name"
+              >Books</span
+            >
+          </div>
+        </a>
+  
+        <div class="icons">
+          <img src="icons/code-pull-request.png" /><span class="icon-name"
+            >Circulation
+          </span>
+        </div>
+
+        <a class="link" href="manage.html">
+          <div class="icons">
+            <img src="icons/move-to-folder.png" /><span class="icon-name"
+              >Manage Books</span
+            >
+          </div>
+        </a>
+
+        <a class="link" href="request.html">
+          <div class="icons">
+            <img src="icons/lead-management.png" /><span class="icon-name"
+              >Manage request</span
+            >
+          </div>
+        </a>
+
+        <div class="icons">
+          <img src="icons/user-gear.png" /><span class="icon-name"
+            >Manage user</span
+          >
+        </div>
+
+         <div class="icons">
+          <img src="icons/settings.png" /><span class="icon-name"
+            >Settings</span
+          >
+        </div>
+
+        <div class="icons">
+          <img src="icons/brightness.png" /><span class="icon-name">Theme</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard-overview">
+        <div class="overview-data total-books">
+        <p class="num-books">875</p>
+        <p>Total Books</p>
+        </div>
+        <div class="overview-data borrowed-books">
+        <p class="num-books">275</p>
+        <p>Borrowed Books</p>
+        </div>
+        <div class="overview-data return-books">
+        <p class="num-books">475</p>
+        <p>Return Books</p>
+        </div>
+        <div class="overview-data issue-books">
+        <p class="num-books">175</p>
+        <p>Issued Books</p>
+        </div>    
+      </div>
+
+    <div class="dashboard-details">
+        <div class="dashboard-details-left">
+            <div class="today-dues">
+            <h4>Today Dues</h4>
+            <div class="dues-information">
+                <div class="book-name">Book Name
+                    <div class="names">ASP.Net</div>
+                    <div class="names">ASP.Net</div>
+                </div>
+                <div class="borrower-name">Borrower Name
+                    <div class="names">Jaymark Anit</div>
+                    <div class="names">Jaymark Anit</div>
+                </div>
+                <div class="date-borrow">Date Borrow
+                    <div class="names">12/24/25</div>
+                    <div class="names">12/24/25</div>
+                </div>
+                <div class="Contact">Contact
+                    <div class="names">0913123151</div>
+                    <div class="names">0913123151</div>
+                </div>
+            </div>
+    </div>
+
+    <div class="most-issued-books">
+      <h4>Most Issued Books</h4>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi perferendis temporibus eos, optio cupiditate ullam consectetur rem mollitia inventore corporis voluptatum corrupti, a sed vel consequuntur ipsa nemo eaque harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ad rem ut vel magni sit ab voluptas, nisi fuga nam voluptatibus culpa iusto, velit nemo facilis nulla dolorem dolore in.</p>
+
+    </div>
+  </div>
+
+  <div class="overall-books">
+    <canvas class="my-chart" width="220" height="220"></canvas>
+    <div class="chart-center">
+        <span class="chart-total">875</span>
+        <span class="chart-label">Total Books</span>
+    </div>
+    <div class="chart-legend">
+        <div class="legend-item">
+        <span class="legend-color" style="background:#2196f3"></span>
+        Return Books
+        </div>
+        <div class="legend-item">
+        <span class="legend-color" style="background:#ffb300"></span>
+        Borrowed Books
+        </div>
+        <div class="legend-item">
+        <span class="legend-color" style="background:#eb2831"></span>
+        Issue Books
+        </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main-scripts/main.js"></script>
+  </body>
+</html>

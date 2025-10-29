@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Library Catalog</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/more-info.css" />
+  </head>
+
+  <body>
+    <!-- Header section -->
+    <div class="header">
+      <div class="search">
+        <button class="search-button js-search-button">
+          <img class="search-icon" src="icons/search.png" />
+        </button>
+        <input
+          type="search"
+          class="searchbar js-searchbar"
+          placeholder="Search books by Name, Author, or ISBN"
+        />
+      </div>
+
+      <div class="notif">
+        <img class="notif-bell" src="icons/notification-bell.png" />
+        <img class="profile" src="images/channel-1.jpeg" />
+      </div>
+    </div>
+
+    <!-- Side bar navigation-->
+    <div class="sidebar">
+      <div class="logo-name">
+        <img class="logo" src="images/Caraga_State_University.png" />
+        <p class="system-name">
+          <span class="digital">University</span>
+          <span class="library-catalog">Library Catalog</span>
+        </p>
+      </div>
+      <div class="sidebar-icons">
+        <a class="link" href="index.html">
+          <div class="icons">
+            <img src="icons/home.png" />
+            <span class="icon-name">Home</span>
+          </div>
+        </a>
+        <div class="icons">
+          <img src="icons/book-open-cover.png" />
+          <span class="icon-name">Books</span>
+        </div>
+        <a class="link" href="borrow.html">
+          <div class="icons">
+            <img src="icons/luggage-cart.png" />
+            <span class="icon-name">My Borrowed</span>
+          </div>
+        </a>
+        <div class="icons">
+          <img src="icons/interrogation.png" />
+          <span class="icon-name">Help Section</span>
+        </div>
+        <div class="icons">
+          <img src="icons/settings.png" />
+          <span class="icon-name">Settings</span>
+        </div>
+        <div class="icons">
+          <img src="icons/brightness.png" />
+          <span class="icon-name">Theme</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Book info panel-->
+    <div class="more-info-sidebar">
+      <img class="remove-div js-remove-div" src="icons/remove-x.png" />
+      <div class="book-information js-book-information"></div>
+    </div>
+
+    <!-- Main content area -->
+    <div class="main-grid">
+      <div class="grid-container js-grid-container"></div>
+    </div>
+
+    <!-- Indicating that no existing books found -->
+    <div class="no-books js-no-books">
+      <p>No existing books</p>
+      <img src="icons/sad.png" />
+    </div>
+
+    <script type="module" src="scripts/bookSearches.js"></script>
+    <script type="module" src="scripts/seeMore.js"></script>
+  </body>
+</html>
